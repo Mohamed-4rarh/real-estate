@@ -47,7 +47,7 @@ export default function Footer() {
               <h3 className='text-[#1B1D1F] mb-[32px] font-semibold text-[24px] leading-[32px]'>{col1.title}</h3>
               {
                 col1.links.map((link) => (
-                  <p className='text-[#6D737A] mb-[16px] text-[16px] leading-[24px]' key={link.index}>{link}</p>
+                  <p className='text-[#6D737A] mb-[16px] text-[16px] leading-[24px] cursor-pointer hover:underline' key={link.index}>{link}</p>
                 ))
               }
             </div>
@@ -55,7 +55,7 @@ export default function Footer() {
               <h3 className='text-[#1B1D1F] mb-[32px] font-semibold text-[24px] leading-[32px]'>{col2.title}</h3>
               {
                 col2.links.map((link) => (
-                  <p className='text-[#6D737A] mb-[16px] text-[16px] leading-[24px]' key={link.index}>{link}</p>
+                  <p className='text-[#6D737A] mb-[16px] text-[16px] leading-[24px] cursor-pointer hover:underline' key={link.index}>{link}</p>
                 ))
               }
             </div>
@@ -63,7 +63,7 @@ export default function Footer() {
               <h3 className='text-[#1B1D1F] mb-[32px] font-semibold text-[24px] leading-[32px]'>{col3.title}</h3>
               {
                 col3.links.map((link) => (
-                  <p className='text-[#6D737A] mb-[16px] text-[16px] leading-[24px]' key={link.index}>{link}</p>
+                  <p className='text-[#6D737A] mb-[16px] text-[16px] leading-[24px] cursor-pointer hover:underline' key={link.index}>{link}</p>
                 ))
               }
             </div>
