@@ -1,27 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media screen and (max-width: 1023px) {
+  .navbar__menu {
+    @apply absolute top-[68px] right-0 flex-col w-full text-center py-[50px] bg-slate-50 shadow-sm font-medium
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hero__section {
+  background: linear-gradient(0deg, rgba(6, 48, 83, 0.60) 0%, rgba(6, 48, 83, 0.60) 100%), url('/Hero.jpg'), lightgray 50% / cover no-repeat;
+}
+
+.buttons {
+  @apply flex mx-auto mt-[50px] justify-center
+}
+
+.container {
+  @apply max-w-[1440px] m-auto px-[50px] py-[10px]
+}
+
+.repeated-title {
+  @apply flex flex-col gap-5 text-center items-center max-w-[600px] m-auto
+}
+
+.repeated-title__title {
+  @apply text-[40px] leading-[45px] font-bold capitalize
+}
+
+.repeated-title__description {
+  @apply text-[20px] font-normal leading-[25px] 
+}
+
+.property-card {
+  @apply flex flex-col gap-[23px] py-[15px] px-[13px] w-[350px] items-start
+}
+
+.property-card__text {
+  @apply flex p-[10px] items-start self-stretch
+}
+
+.property-card__services {
+  @apply flex gap-[20px] items-start py-0 px-[10px]
+}
+
+.property-card__owner {
+  @apply flex justify-between items-center
+}
+
+.property-card__owner-person {
+  @apply flex gap-[5px]
+}
+
+.property-card__owner-icons {
+  @apply flex gap-[10px]
 }
