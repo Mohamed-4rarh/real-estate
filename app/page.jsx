@@ -25,7 +25,7 @@ export default function Home() {
         <LatestProperties />
       </section>
 
-      <section className='py-[85px] px-[10px] sm:px-[25px] xl:px-[50px]'>
+      <section className='py-[85px] px-[10px] sm:px-[25px]'>
         <PropertiesByLocation />
       </section>
 

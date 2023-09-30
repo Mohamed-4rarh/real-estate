@@ -11,7 +11,7 @@ html {
 
 @media screen and (max-width: 1023px) {
   .navbar__menu {
-    @apply absolute top-[66px] right-0 flex-col w-full text-center py-[50px] bg-slate-50 shadow-sm font-medium
+    @apply absolute top-[66px] right-0 flex-col w-full text-center py-[50px] bg-white shadow-sm font-medium
   }
 }
 
@@ -24,7 +24,7 @@ html {
 }
 
 .container {
-  @apply max-w-[1440px] m-auto px-[10px] py-[10px]
+  @apply  max-w-[1440px] m-auto px-[10px] py-[10px]
 }
 
 .repeated-title {

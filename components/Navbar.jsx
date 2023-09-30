@@ -7,8 +7,8 @@ import React, { useState } from 'react'
 export default function Navbar() {
   const [opend, setOpened] = useState(false)
   return (
-    <header className='py-[22px] px-[10px] sm:px-[25px] xl:px-[80px] shadow-md sticky top-0 right-0 bg-white z-10'>
-        <nav className='flex justify-between items-center relative'>
+    <header className='py-[10px] px-[10px] sm:px-[25px] xl:px-[80px] shadow-md sticky top-0 right-0 bg-white z-10'>
+        <nav className='flex justify-between items-center relative container'>
             <Image src='/Logo.svg' alt='Real State Home Page' width={120} height={45} className='cursor-pointer' />
             <ul className='gap-[30px] hidden lg:flex'>
               <li><Link href='/' className='p-[10px]' >Home</Link></li>
